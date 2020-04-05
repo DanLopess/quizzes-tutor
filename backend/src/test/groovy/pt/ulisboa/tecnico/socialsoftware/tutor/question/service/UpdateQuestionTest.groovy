@@ -160,7 +160,7 @@ class UpdateQuestionTest extends Specification {
 
         then: "the question an exception is thrown"
         def exception = thrown(TutorException)
-        exception.getErrorMessage() == ErrorMessage.QUESTION_MULTIPLE_CORRECT_OPTIONS
+        exception.getErrorMessage() == ErrorMessage.ONE_CORRECT_OPTION_NEEDED
     }
 
     @TestConfiguration
